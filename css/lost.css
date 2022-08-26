@@ -1,0 +1,108 @@
+@charset "uft-8";
+/*공통사항 시작*/
+
+*{
+    font-family: 'Gugi', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color:#000;
+}
+
+/*공통사항 종료*/
+
+/*배경화면 시작*/
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*배경화면 종료*/
+
+/*비밀번호 찾기 시작*/
+
+h1 {
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.sign {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    margin-left: 38%;
+}
+
+.tag {
+    position: absolute;
+    top:60px;
+    left: 125px;
+    margin: 20px;
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+
+.lost {
+    margin-left: 70px;
+    margin-top: 113px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #000;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: auto;
+}
+
+.lost:hover {
+    color:yellow;
+}
+
+.homego {
+    position: absolute;
+    width: 48px;
+    height: 25px;
+    left: 12px;
+    bottom: 0px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+}
+
+.homego a{
+    color: #fff;
+}
+
+.homego a:hover {
+    color: yellow;
+}
+
+/*비밀번호 찾기 종료*/

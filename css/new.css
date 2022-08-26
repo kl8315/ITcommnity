@@ -1,0 +1,108 @@
+@charset "uft-8";
+/*공통사항 시작*/
+
+*{
+    font-family: 'Gugi', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color:#000;
+}
+
+/*공통사항 종료*/
+
+/*배경화면 시작*/
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*배경화면 종료*/
+/*회원가입 탭 시작*/
+h1 {
+    font-size: 48px;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+h1 a {
+    color: #fff;
+}
+
+h1 a:hover{
+    color: yellow;
+}
+
+.sign {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border: 1.5px solid #fff;
+    border-radius: 3px;
+    margin-left: 35%;
+    padding: 30px;
+}
+
+.sign label {
+    color: #fff;
+}
+
+.word {
+    color: #fff;
+}
+
+span {
+    color: #fff;
+}
+
+.go {
+    margin-left: 250px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.go:hover {
+    color: #23a6d5;
+}
+
+.homego {
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #000;
+    left: 220px;
+    cursor: pointer;
+    height: 24px;
+    margin-top: 1px;
+}
+
+.homego a{
+    color: #fff;
+}
+
+.homego a:hover {
+    color: #23a6d5;
+}
+/*회원가입 탭 종료*/
+

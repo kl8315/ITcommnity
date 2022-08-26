@@ -1,0 +1,426 @@
+@charset "uft-8";
+
+*{
+    font-family: 'Gugi', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color:#000;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+    text-align: top;
+}
+
+.contents1 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents1_bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contents3 {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.result {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+a:hover {
+    color: red;    
+}
+
+/*헤더 영역 시작*/
+
+.intro_bg {
+    background-image: url("../images/start.jpg");
+    width:100%;
+    height: 778px;
+    background-size: 100%;
+    animation: ani_move 15s infinite;
+    position: relative;
+}
+
+@keyframes ani_move {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+.header {
+    position: relative;
+    display:flex ;
+    width: 1280px;
+    margin: auto;
+    height: 86px;
+}
+
+/*검색 영역 시작*/
+.search_area {
+    margin-top: 150px;
+    margin-right: 100px;
+    width: 200px;
+    line-height: 40px;
+    height: 40px;
+    background: rgb(49, 46, 46);
+    border-radius: 5px;
+}
+
+.search_area > form > input {
+    position: relative;
+    border: none;
+    width: 200px;
+    height: 40px;
+    background:rgba(0,0,0,0.0);
+    color: #fff;
+    text-align: center;
+}
+.searchbar{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    left: 210px;
+
+}
+.search_area > form > span {
+    width: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*게시판 검색 시작*/
+.search_area_board {
+    position: absolute;
+    width: 200px;
+    line-height: 40px;
+    height: 40px;
+    background: rgb(49, 46, 46);
+    border-radius: 5px;
+    top: 140%;
+    right: 40%;
+    margin: 0px -40px 0 0;
+}
+
+.search_area_board > form > input {
+    border: none;
+    width: 200px;
+    height: 40px;
+    background:rgba(0,0,0,0.0);
+    color: #fff;
+    text-align: center;
+}
+
+.search_area_board > form > span {
+    width: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*게시판 검색 종료*/
+/*검색 영역 종료*/
+
+/*상단 네비 영역 시작*/
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: 1300px;
+}
+
+.nav>li{
+    margin-left: 50px;
+}
+
+.nav > li > a {
+    color: #fff;
+}
+
+.boardtab {
+    color: #fff;
+}
+
+.sub > li > a {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.sub > li > a:hover {
+    color: yellow;
+}
+
+.title02 {
+    color: #fff;
+    cursor: pointer;
+}
+/*상단 네비 영역 종료*/
+
+/*상단 제목 영역 시작*/
+.intro_text {
+    width: 100%;
+    margin: 231px auto 231px auto;
+    text-align: center;
+}
+
+.intro_text > h1,
+.intro_text > h4{
+    color: #fff;
+}
+
+/*상단 네비 영역 종료*/
+
+/*로그인 영역 시작*/
+.login {
+    width: 280px;
+    height: 230px;
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    bottom: 50%;
+    margin: -100px 0px 0px -100px;
+}
+.login > form > .id, .password {
+    width: 150px;
+    height: 24px;
+}
+
+.login > .forget > a {
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.submit_btn {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*로그인 영역 종료*/
+
+/*헤더 영역 종료*/
+
+/*상단 박스 영역 시작*/
+
+.amount{
+    position: relative;
+    top:-66px;
+    display: flex;
+    width: 1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    margin: auto;
+}
+
+.amount > li >div {
+    text-align: center;
+    margin-top: 37px;
+    height: 57px;
+}
+
+.amount > li:not(:last-child) > div {
+    border-right: 1px solid gray;
+}
+
+.amount > li {
+    flex: 1;
+    height: 132px;
+}
+
+/*상단 박스 영역 종료*/
+
+/*하단 박스 영역 시작*/
+
+.main_text0{
+    width: 100%;
+    height: 470px;
+    margin-top: -180px;
+    background-color: #f1f2f3;
+}
+
+.main_text0 > h1 {
+    margin-top: 116px;
+    text-align: center;
+   
+}
+
+.main_text0 > .contents1 {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    width: 1280px;
+    height: 302px;
+   
+    margin: auto;
+}
+
+.icons > li {
+    flex : 1;
+    background: #fff;
+    margin-top: 49px;
+    height: 302px;
+    text-align: center;
+}
+
+.icons > li > .icon_img1 {
+    margin-top: 18px;
+}
+
+.icons > li:not(:last-child){
+    margin-right: 20px;
+}
+
+.icons .contents2 {
+    width: 180px;
+    margin: auto;
+    letter-spacing: -2px;
+}
+
+.boardgo a{
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to bottom, #a6a6a6 0%, #bdbdbd 50%, #5d5d5d 100%);
+    color: #fff;
+    margin: 25px auto;
+    font-size: 25px;
+    line-height: 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.boardgo a:hover {
+    color: #000;
+}
+
+/*하단 박스 영역 종료*/
+
+/*규칙 영역 시작*/
+
+.main_text1 {
+    width: 100%;
+    height: 659px;
+}
+
+.main_text1 > h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.main_text1 > .contents1 {
+    text-align: center;
+}
+
+.service {
+    width: 1280px;
+    display: flex;
+    margin: 49px auto;
+    height: 427px;
+ 
+}
+
+.img2 {
+    width: auto;
+    height: auto;
+    max-width: 990px;
+    max-height: 427px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.service > .contents2 {
+    padding: 20px;
+}
+
+.service > .contents2 > h2{
+    margin-bottom: 27px;
+}
+
+/*규칙 부분 종료*/
+
+/*건의사항 부분 시작*/
+
+.main_text2 {
+    width: 1921px;
+    height: 418px;
+    background-image: url("../images/contact.png");
+    background-size: cover;
+    margin: auto;
+}
+
+.main_text2 > ul{
+    display: flex;
+    padding-top: 138px;
+}
+
+.main_text2 > ul > li {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.main_text2 > ul > li > div > h1,
+.main_text2 > ul > li > div {
+    color: #fff;
+}
+
+.more2 {
+    width: 220px;
+    height: 40px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 16px auto;
+}
+
+.letter {
+    color: #fff;
+}
+
+/*건의사항 부분 종료*/
+
+/*footer 영역 시작*/
+
+footer {
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #1f1f1f;
+    padding: 20px;
+}
+
+.logok {
+    width: 65px;
+    height: 80px;
+}
+
+footer > div:first-child {
+    flex: 3;
+    text-align: center;
+    color: #fff;
+}
+
+footer > div:last-child {
+    flex: 9px;
+    color: #fff;
+}
+
+/*footer 영역 종료*/

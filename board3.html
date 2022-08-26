@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 디자인 게시판</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Gugi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/board.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <!--헤더영역 시작-->
+    <!--백그라운드 이미지 및 검색창 시작-->
+    <div class="wrap">
+        <div class="intro_bg">
+    <!--로그인 영역 시작-->
+    <div class="login">
+        <form>
+            <input class="id" type="text" name="email" class="text-field" placeholder="아이디" autocomplete="off">
+            <input class="password" type="password" name="password" class="text-field" placeholder="비밀번호" autocomplete="off">
+            <input type="submit" name="로그인" class="submit_btn" value="로그인">
+        </form><br>
+        <div class="forget">
+            <a href="new.html">회원가입</a>
+            <a href="lost.html">아이디/비밀번호 찾기</a> 
+        </div>
+            <div class="container">
+                <div class="search_area_board">
+                    <form>
+                        <input type="search" placeholder="검색">
+                        <img class="searchbar" src="images/search.png">
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!--로그인 영역 종료-->
+    <!--백그라운드 텍스트 영역 시작-->
+            <div class="header" id="link_header">
+                <ul class="nav">
+                    <li class="aaa"><a href="index.html">HOME</a></li>
+                    <li class="boardtab">
+                        <div class="title02">BOARD</div>
+                        <ul class="sub">
+                            <li><a href="board1.html">백엔드</a></li>
+                            <li><a href="board2.html">프론트엔드</a></li>
+                            <li><a href="board3.html">웹 디자인</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#3">Rule</a></li>
+                    <li><a href="#4">건의사항</a></li>
+                </ul>
+            </div>
+            <div class="intro_text">
+                <h1>I T 커뮤니티</h1>
+                <h4 class="contents1">- 웹디자인 게시판 -</h4>
+            </div>
+        </div>
+    </div>
+    <!--백그라운드 텍스트 영역 종료-->
+    <!--백그라운드 이미지 및 검색창 종료-->
+    <!--백그라운드 텍스트 영역 종료-->
+    <!--백그라운드 이미지 및 검색창 종료-->
+    <ul class="icons">
+        <li>
+            <div class="icon_img1">
+                <img src="images/warehouse.png" alt="백앤드 아이콘" width="136" height="127">
+            </div>
+            <div class="contents1_bold">백엔드</div>
+            <div class="contents2">
+                Java<br>
+                Node.js<br>
+                등등
+            </div>
+            <div class="boardgo">
+                <a href="board1.html">바로가기</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="icon_img1">
+            <img src="images/solution.png" alt="프론트앤드 아이콘" width="136" height="127">
+            </div>
+            <div class="contents1_bold">프론트엔드</div>
+            <div class="contents2">
+                HTML/CSS<br>
+                React<br>
+                등등
+            </div>
+            <div class="boardgo">
+                <a href="board2.html">바로가기</a>
+            </div>
+        </li>
+        <li>
+            <div class="icon_img1">
+                <img src="images/design.png" alt="웹 디자인 아이콘" width="136" height="127">
+            </div>
+            <div class="contents1_bold">웹 디자인</div>
+            <div class="contents2">
+                UI/UX<br>
+                일러스트레이터<br>
+                등등
+            </div>
+            <div class="boardgo">
+                <a href="board3.html">바로가기</a>
+            </div>
+         </li>
+         </ul>
+        
+    <!--board 부분 종료-->
+    <!--헤더 영역 종료-->
+    
+    <!--게시판 부분 시작-->
+    <div class="commit">
+        <table id="table1">
+        
+            <caption>웹 디자인 게시판</caption>
+                <tr>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+                <tr>
+                    <td><a href="#">공지사항입니다.</a></td>
+                    <td>관리자</td>
+                    <td>2022.06.28</td>
+                </tr>
+                <tr>
+                    <td><a href="https://medium.com/dawn-cau/ui-ux%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90%EB%93%A4-bd973e6195ff" target="_blank">UI/UX 기본 개념</a></td>
+                    <td>관리자</td>
+                    <td>2022.06.28</td>
+                </tr>
+                <tr>
+                    <td><a href="https://brunch.co.kr/@uxdragon/61" target="_blank">UI/UX 책추천</a></td>
+                    <td>관리자</td>
+                    <td>2022.06.28</td>
+                </tr>
+                <tr>
+                    <td><a href="https://blogpack.tistory.com/52" target="_blank">디자인 관련 강의 사이트 추천 모음</a></td>
+                    <td>관리자</td>
+                    <td>2022.06.28</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/results?search_query=%EC%9B%B9%EB%94%94%EC%9E%90%EC%9D%B8+%EA%B0%95%EC%9D%98" target="_blank">웹디자인 유튜브 강의 목록</a></td>
+                    <td>관리자</td>
+                    <td>2022.06.28</td>
+                </tr>
+                <tr>
+                    <td><a href="https://appmaster.io/ko/blog/2022nyeon-budeureoun-web-dijain-teurendeu-25gaji" target="_blank">2022년 부드러운 웹 디자인 트랜드 25</a></td>
+                    <td>관리자</td>
+                    <td>2022.07.28</td>
+                </tr>
+                <tr>
+                    <td><a href="https://2colors.colorion.co/" target="_blank">어울리는 게시판 색상 찾기 추천 사이트</a></td>
+                    <td>관리자</td>
+                    <td>2022.06.28</td>
+                </tr>
+           
+        </table>
+            <div class="boardnumber">
+                <ul class="number">
+                    <li><a href="#">처음</a></li>
+                    <li><a href="#">[1]</a></li>
+                    <li><a href="#">[2]</a></li>
+                    <li><a href="#">[3]</a></li>
+                    <li><a href="#">[4]</a></li>
+                    <li><a href="#">[5]</a></li>
+                    <li><a href="#">마지막</a></li>
+                </ul>
+                
+                <div class="search_area1">
+                    <form>
+                        <input type="search" placeholder="검색">
+                    </form>
+                    <div class="btnwr">
+                        <a href=write.html>글쓰기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    <!--게시판 부분 종료-->
+
+      <!--건의사항 부분 시작-->
+      <div class="main_text2" id="4">
+        <ul>
+            <li>
+                <div><h1>건의사항</h1></div>
+                <div>건의사항은 언제든 환영입니다.</div>
+                <div class="more2"><a class="letter" href="complain.html">
+                    편지쓰기
+                </a>
+            </div>
+            </li>
+            <li></li>
+        </ul>
+    </div>
+    <!--건의사항 부분 종료-->
+
+    <!--footer 부분 시작-->
+    <footer>
+        <div>
+            <img class="logok" src="images/logo2.png" alt="로고">
+        </div>
+        <div>
+            제작자. 김동욱 <br>
+            Addr. 경기도 파주시 송화로13 <br>
+            number) 010-8335-8332<br>
+            COPYRIGHT 2022. DONG. ALL RIGHT RESERVED.
+        </div>
+    </footer>
+    <!--footer 부분 종료-->
+    <script>
+        $('.sub').hide();
+        $('.boardtab').hover(function () {
+            $(this).find('.sub').slideDown();
+        }, function() {
+            $(this).find('.sub').slideUp();
+        });
+    </script>
+</body>
+</html>

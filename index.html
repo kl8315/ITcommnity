@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT 커뮤니티 사이트</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Gugi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="js/agent.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <!--헤더영역 시작-->
+    <!--백그라운드 이미지 및 검색창 시작-->
+    <div class="wrap">
+        <div class="intro_bg">
+    <!--로그인 영역 시작-->
+            <div class="login">
+                <form>
+                    <input class="id" type="text" name="email" class="text-field" placeholder="아이디" autocomplete="off">
+                    <input class="password" type="password" name="password" class="text-field" placeholder="비밀번호" autocomplete="off">
+                    <input type="submit" name="로그인" class="submit_btn" value="로그인">
+                </form><br>
+                <div class="forget">
+                    <a href="new.html">회원가입</a>
+                    <a href="lost.html">아이디/비밀번호 찾기</a> 
+                </div>
+                <div class="container">
+                    <div class="search_area">
+                        <form>
+                            <input type="search" placeholder="검색">
+                            <img class="searchbar" src="images/search.png">
+                        </form>
+                    </div>
+                </div>
+            </div>
+    <!--로그인 영역 종료-->
+    <!--백그라운드 텍스트 영역 시작-->
+            <div class="header" id="link_header">
+                <ul class="nav">
+                    <li class="aaa"><a href="#link_header">HOME</a></li>
+                    <li class="boardtab">
+                        <div class="title02">BOARD</div>
+                        <ul class="sub">
+                            <li><a href="board1.html">백엔드</a></li>
+                            <li><a href="board2.html">프론트엔드</a></li>
+                            <li><a href="board3.html">웹 디자인</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#3">Rule</a></li>
+                    <li><a href="#4">건의사항</a></li>
+                </ul>
+            </div>
+            <div class="intro_text">
+                <h1>I T 커뮤니티</h1>
+                <h4 class="contents1">IT 업계의 모든 분들을 환영합니다!</h4>
+            </div>
+        </div>
+    </div>
+    <!--백그라운드 텍스트 영역 시작-->
+    <!--백그라운드 이미지 및 검색창 종료-->
+
+    <!--헤더 영역 종료-->
+
+    <!--IT분야 부분 시작-->
+    <ul class="amount">
+        <li>
+            <div>
+                <div class="contents1">백엔드</div>
+                <div class="result">보급창고</div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">프론트엔드</div>
+                <div class="result">무기제작</div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">웹 디자인</div>
+                <div class="result">부품제작</div>
+            </div>
+        </li>
+    </ul>
+    
+<!--IT분야 부분 종료-->
+
+<!--board 부분 시작-->
+    <div class="main_text0" id="2">
+    <h1>BOARD</h1>
+    <div class="contents1">게시판 종류</div>
+    <ul class="icons">
+            <li>
+                <div class="icon_img1">
+                    <img src="images/warehouse.png" alt="백앤드 아이콘" width="136" height="127">
+                </div>
+                <div class="contents1_bold">백엔드</div>
+                <div class="contents2">
+                    Java<br>
+                    Node.js<br>
+                    등등
+                </div>
+                <div class="boardgo">
+                    <a href="board1.html">바로가기</a>
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_img1">
+                <img src="images/solution.png" alt="프론트앤드 아이콘" width="136" height="127">
+                </div>
+                <div class="contents1_bold">프론트엔드</div>
+                <div class="contents2">
+                    HTML/CSS<br>
+                    React<br>
+                    등등
+                </div>
+                <div class="boardgo">
+                    <a href="board2.html">바로가기</a>
+                </div>
+            </li>
+            <li>
+                <div class="icon_img1">
+                    <img src="images/design.png" alt="웹 디자인 아이콘" width="136" height="127">
+                </div>
+                <div class="contents1_bold">웹 디자인</div>
+                <div class="contents2">
+                    UI/UX<br>
+                    일러스트레이터<br>
+                    등등
+                </div>
+                <div class="boardgo">
+                    <a href="board3.html">바로가기</a>
+                </div>
+             </li>
+             </ul>
+            </div>
+        <!--board 부분 종료-->
+
+        <!--규칙 부분 시작-->
+        <div class="main_text1" id="3">
+             <h1>커뮤니티 규칙</h1>
+                <div class="contents1">반드시 규칙을 준수해주세요.</div>
+                <div class="service">
+                <div class="hip_photo">
+                    <img class="img2" src="images/meeting.jpg" alt="커뮤니티사진">
+                </div>
+                    <div class="contents2">
+                        <h2>1. 고운 말을 사용해주세요.</h2>
+                        <h2>2. 타인에게 상처입히는 말은 삼가해주세요.</h2>
+                        <h2>3. 스터디 시 분란은 본 커뮤니티와 상관없습니다.</h2>
+                        <h2>4. 서로에게 도움이 되주세요.</h2>
+                        <h2>5. 도움을 받았다면 베풀어주세요.</h2>
+                        <h2>6. 광고는 하지말아주세요.(강퇴)</h2>
+                        <h2>7. 다툼 시 바로 제명입니다.(강퇴)</h2>
+                        
+                    </div> 
+                </div>
+            </div>
+            <!--규칙 부분 종료-->
+
+            <!--건의사항 부분 시작-->
+            <div class="main_text2" id="4">
+                <ul>
+                    <li>
+                        <div><h1>건의사항</h1></div>
+                        <div>건의사항은 언제든 환영입니다.</div>
+                        <div class="more2"><a class="letter" href="complain.html">
+                            편지쓰기
+                        </a>
+                    </div>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+            <!--건의사항 부분 종료-->
+
+            <!--footer 부분 시작-->
+            <footer>
+                <div>
+                    <img class="logok" src="images/logo2.png" alt="로고">
+                </div>
+                <div>
+                    제작자. 김동욱 <br>
+                    Addr. 경기도 파주시 송화로13 <br>
+                    number) 010-8335-8332<br>
+                    COPYRIGHT 2022. DONG. ALL RIGHT RESERVED.
+                </div>
+            </footer>
+            <!--footer 부분 종료-->
+            <script>
+                $('.sub').hide();
+                $('.boardtab').hover(function () {//hover가 작동중인지 아닌지 확인하는 방법 그리고 스탑()
+                    $(this).find('.sub').slideDown();
+                }, function() {
+                    $(this).find('.sub').slideUp();
+                });
+            </script>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+@charset "uft-8";
+
+*{
+    font-family: 'Gugi', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color:#000;
+}
+
+body {
+    background-color: #ccc;
+    background:linear-gradient(to bottom #fff 0%, #ccc 50% rgb(75, 73, 73) 100%);
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+a {
+    color: #000;
+}
+
+th, td {
+    color: #000;
+    height: 40px;
+}
+
+/*헤더 부분 시작*/
+.board_bg img {
+    width:100%;
+    height: 778px;
+    background-size: 100%;
+}
+
+.board_bgtext {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 440px;
+}
+
+.board_bgtext h1 {
+    color: #fff;
+}
+
+/*헤더 부분 종료*/
+
+/*리스트 부분 시작*/
+
+.boradgrid{
+    width: 200px;
+    height: 600px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 20px;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-image: url(images/cosmos.jpg);
+}
+
+ul>h3 {
+    margin: 30px;
+    color: #fff;
+}
+
+.wing { 
+    padding-top: 30px;
+}
+
+ul>li {
+    margin: 10px;
+}
+
+a:hover {
+    color:red;    
+}
+
+.all {
+    display: flex;
+}
+
+/*리스트 부분 종료*/
+
+/*게시판 부분 시작*/
+
+#table1 {
+    width: 1260px;
+    height: 420px;
+    border: 1px solid #000;
+    margin-top: 70px;
+    margin-left: 321px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+caption {
+    width: 1260px;
+    font-size: 50px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #000;
+    background-color: #fff;
+}
+
+#table1 td {
+    text-align: center;
+}
+
+.boardnumber {
+    margin-top: 20px;
+    position: relative;
+}
+
+.number {
+    display: flex;
+    margin-left: 42%;
+    margin-bottom: 3%;
+}
+
+th, td {
+    border: 1px solid #000;
+}
+
+.search_area1 {
+    display: flex;
+    position: absolute;
+    left: 1350px;
+    bottom: 9px;
+}
+
+.search_area1 > .search1 {
+    height: 50px;
+}
+.search_area1 > form > input {
+    width: 180px;
+    height: 25px;
+}
+
+.btnwr {
+    border: 1px solid #111;
+    margin-left: 5px;
+    background-color: #fff;
+}
+
+/*게시판 부분 종료*/
+
+/*건의사항 부분 시작*/
+
+.main_text2 {
+    width: 1921px;
+    height: 418px;
+    background-image: url("../images/contact.png");
+    background-size: cover;
+    margin: auto;
+}
+
+.main_text2 > ul{
+    display: flex;
+    padding-top: 138px;
+}
+
+.main_text2 > ul > li {
+    flex: 1;
+    text-align: center;
+}
+
+.main_text2 > ul > li > div > h1,
+.main_text2 > ul > li > div {
+    color: #fff;
+}
+
+.more2 {
+    width: 195px;
+    height: 40px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 16px 373px;
+}
+
+/*건의사항 부분 종료*/
+
+/*footer 영역 시작*/
+
+footer {
+    width: auto;
+    height: auto;
+    display: flex;
+    background: #1f1f1f;
+    padding: 20px;
+}
+
+footer > div:first-child {
+    flex: 3;
+    text-align: center;
+    color: #fff;
+}
+
+footer > div:last-child {
+    flex: 9px;
+    color: #fff;
+}
+
+/*footer 영역 종료*/
